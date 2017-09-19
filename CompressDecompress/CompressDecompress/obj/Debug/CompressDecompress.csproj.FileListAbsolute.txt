@@ -1,0 +1,9 @@
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\bin\Debug\CompressDecompress.exe.config
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\bin\Debug\CompressDecompress.exe
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\bin\Debug\CompressDecompress.pdb
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\obj\Debug\CompressDecompress.csprojResolveAssemblyReference.cache
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\obj\Debug\CompressDecompress.Form1.resources
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\obj\Debug\CompressDecompress.Properties.Resources.resources
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\obj\Debug\CompressDecompress.csproj.GenerateResource.Cache
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\obj\Debug\CompressDecompress.exe
+D:\Downloads\KISS_OSD-master\KISS_OSD-master\CompressDecompress\CompressDecompress\obj\Debug\CompressDecompress.pdb
