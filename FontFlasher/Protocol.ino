@@ -50,6 +50,8 @@ boolean ReadTelemetry()
 
         throttle = ((serialBuf[STARTCOUNT] << 8) | serialBuf[1 + STARTCOUNT]) / 10;
         roll = 1000 + ((serialBuf[2 + STARTCOUNT] << 8) | serialBuf[3 + STARTCOUNT]);
+		if (tempoverride > 0)
+			roll = 2000;
         pitch = 1000 + ((serialBuf[4 + STARTCOUNT] << 8) | serialBuf[5 + STARTCOUNT]);
         yaw = 1000 + ((serialBuf[6 + STARTCOUNT] << 8) | serialBuf[7 + STARTCOUNT]);
         LipoVoltage = ((serialBuf[17 + STARTCOUNT] << 8) | serialBuf[18 + STARTCOUNT]);

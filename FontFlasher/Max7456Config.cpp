@@ -4,7 +4,8 @@
 #include "fontCompressedV2.h"
 #else
 #include "fontCompressedV2.h"
-#endif#include "CSettings.h"
+#endif
+#include "CSettings.h"
 
 extern CSettings settings;
 

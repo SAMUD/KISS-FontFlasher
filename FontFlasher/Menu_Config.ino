@@ -843,7 +843,7 @@ void* MainMenu()
         updateFont = true;
         return (void*)MainMenu;
       break;
-      case 1:
+      /*case 1:
         cleanScreen();
         return (void*)DisplayMenu;
       break;
@@ -890,7 +890,7 @@ void* MainMenu()
       case 9:
         cleanScreen();
         return (void*)ResetMenu;
-      break;
+      break;*/
     }
   }
   static const uint8_t MAIN_MENU_ITEMS = 10;
@@ -909,22 +909,22 @@ void* MainMenu()
   
   uint8_t startRow = 0;
   uint8_t startCol = settings.COLS/2 - strlen_P(CHANGE_ORDER_STR)/2;
-  OSD.setCursor( settings.COLS/2 - strlen_P(KISS_OSD_VER)/2, ++startRow );
-  OSD.print( fixPStr(KISS_OSD_VER) );
-  static const char MAIN_TITLE_STR[] PROGMEM = "main menu";
-  OSD.printP( settings.COLS/2 - strlen_P(MAIN_TITLE_STR)/2, ++startRow, MAIN_TITLE_STR );
+  //OSD.setCursor( settings.COLS/2 - strlen_P(KISS_OSD_VER)/2, ++startRow );
+  //OSD.print( fixPStr(KISS_OSD_VER) );
+  //static const char MAIN_TITLE_STR[] PROGMEM = "main menu";
+ // OSD.printP( settings.COLS/2 - strlen_P(MAIN_TITLE_STR)/2, ++startRow, MAIN_TITLE_STR );
   
   OSD.printP( startCol, ++startRow, UPDATE_FONT_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, DISPLAY_PAGE_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, NICKNAME_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, MOVE_ITEMS_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, CENTER_OSD_STR, activeMenuItem );
-  if(settings.m_DVchannel == 4) OSD.printP( startCol, ++startRow, SET_OSD_ITEMS_STR, activeMenuItem );  
-  else OSD.printP( startCol, ++startRow, CHANGE_ORDER_STR, activeMenuItem );  
-  OSD.printP( startCol, ++startRow, BATTERY_PAGE_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, VTX_PAGE_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, SAVE_STR, activeMenuItem );
-  OSD.printP( startCol, ++startRow, RESET_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, DISPLAY_PAGE_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, NICKNAME_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, MOVE_ITEMS_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, CENTER_OSD_STR, activeMenuItem );
+  //if(settings.m_DVchannel == 4) OSD.printP( startCol, ++startRow, SET_OSD_ITEMS_STR, activeMenuItem );  
+  //else OSD.printP( startCol, ++startRow, CHANGE_ORDER_STR, activeMenuItem );  
+  //OSD.printP( startCol, ++startRow, BATTERY_PAGE_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, VTX_PAGE_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, SAVE_STR, activeMenuItem );
+  //OSD.printP( startCol, ++startRow, RESET_STR, activeMenuItem );
   
   return (void*)MainMenu;
 }

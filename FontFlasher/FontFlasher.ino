@@ -124,6 +124,8 @@ void setvTxSettings()
 }
 #endif
 
+static uint16_t tempoverride = 2000;
+
 void cleanScreen()
 {
   OSD.clear();
@@ -208,6 +210,8 @@ void setup()
   uint8_t i;
   for (i = 0; i < CSettings::OSD_ITEMS_POS_SIZE; i++) itemLengthOK[i] = 0;
   NewSerial.begin(115200);
+  delay(1000);
+
 }
 
 static int16_t  throttle = 0;
@@ -647,8 +651,9 @@ void loop() {
     {
       static const char FONT_COMPLETE_STR[] PROGMEM = "font updated";
       OSD.printP(settings.COLS / 2 - strlen_P(FONT_COMPLETE_STR) / 2, settings.ROWS / 2, FONT_COMPLETE_STR);
+	  while (1) delay(1000);
       #ifdef UPDATE_FONT_ONLY
-      while(1) delay(1000);
+	  while (1) delay(1000);
       #else
       delay(3000);
       updateFontComplete = false;
